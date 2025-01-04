@@ -8,7 +8,7 @@ const Hero = () => {
     <p className='text-xl text-gray-700 font-[Poppins]'>Don't deny yourself the pleasure of driving  the best permium cars from around the world here and now.</p>
     </div>
     <div className='w-[90%]'>
-    <img src={porshce} className='w-full object-contain' alt='Porsche'/>
+        <img src={porshce} className='w-full object-contain scale-110' alt='Porsche'/>
     </div>
     </section>
   )

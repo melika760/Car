@@ -9,8 +9,8 @@ export const menu=[{
     path:'#About'
   },
   {
-    name:"Testemonial",
+    name:"Testimonials",
     id:3,
-    path:'#Testemonial'
+    path:'#Testimonials'
   },
 ]
