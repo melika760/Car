@@ -1,14 +1,14 @@
 import React from 'react'
-
+import porshce from '../assets/Porsche.png'
 const Hero = () => {
   return (
-    <section className='flex justify-between m-auto'>
+    <section className='flex justify-between m-[6rem] align-center items-center'>
 <div className=''>
-<h1 className='text-4xl font-bold'>Premium Car Rental in London</h1>
-<p className='text-2xl text-gray-800'>Don't deny yourself the pleasure of driving  the best permium cars from around the world here and now.</p>
+<h1 className='text-6xl font-bold font-[Poppins] mb-4 text-red-800'>Premium Car Rental in London</h1>
+<p className='text-xl text-gray-700 font-[Poppins]'>Don't deny yourself the pleasure of driving  the best permium cars from around the world here and now.</p>
 </div>
-<div>
-    images
+<div className='w-[90%]'>
+    <img src={porshce} className='w-full object-contain' alt='Porsche'/>
 </div>
     </section>
   )
