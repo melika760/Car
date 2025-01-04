@@ -1,22 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { menu } from './Constants'
 const Nav = () => {
-  const menu=[{
-    name:"Cars",
-    id:1,
-    path:'#Cars'
-  },
-  {
-    name:"About Us",
-    id:2,
-    path:'#About'
-  },
-  {
-    name:"Testemonial",
-    id:3,
-    path:'#Testemonial'
-  },
-]
   return (
   <nav className='flex m-3 justify-between items-center'>
     <div>
