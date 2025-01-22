@@ -4,7 +4,7 @@ import Cards from './Cards'
 const PopularCars = () => {
   return (
     <section className='m-[80px]'>
-        <h2 className='font-bold text-4xl mt-[5rem] mb-[3rem] '>Our Vehicle Fleet</h2>
+        <h2 className='font-[Poppins] font-bold text-4xl mt-[5rem] mb-[3rem] '>Our Vehicle Fleet</h2>
         <div className='flex  items-center jsutify-between space-x-8'>
         <Cards/>
         <Cards/> 

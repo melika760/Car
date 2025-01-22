@@ -5,8 +5,8 @@ import gas from "../assets/gas.png";
 import Wheel from "../assets/steering-wheel.png";
 const Cards = () => {
   return (
-    <div className='w-[30%] group border border-gray-100 shadow-sm flex flex-col p-4 space-y-10 bg-gray-100   hover:bg-white hover:shadow-md rounded-3xl relative'>
-      <h1 className='text-2xl font-semibold capitalize '>Toyota Camery</h1>
+    <div className='w-[30%] group border border-gray-100 shadow-sm flex flex-col p-4 space-y-10 bg-gray-100   hover:bg-white hover:shadow-md hover:scale-105 rounded-3xl relative'>
+      <h1 className='text-2xl font-semibold capitalize font-[Poppins]'>Toyota Camery</h1>
       <p className='flex mt-6 text-[32px] font-extrabold font-[Poppins]'>
     <span className='self-start text-[14px] font-semibold'>$</span>22
     <span className='self-end text-[14px] font-medium'>/day</span>
