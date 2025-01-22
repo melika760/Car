@@ -7,9 +7,12 @@ const response= await fetch( `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?
 , { method:"GET",
     headers:headers
 });
+if(!response.ok){return;}
 const result= await response.json();
-console.log(result)
-return result;
+const oneItem=result[0]
+const rent=Calculation(oneItem)
+console.log(rent)
+return {oneItem,rent};
 }
 
 export function Calculation(car){
@@ -19,6 +22,5 @@ const CarAge=CurrentYear-car.year;
 const AgeDiscount=baseRent*0.01*Math.max(0,CarAge-5);
 const fuelEfficiencyBonus = car.combination_mpg > 25 ? 2 : 0;
 const dailyRent = baseRent - AgeDiscount + fuelEfficiencyBonus;
-console.log(car.year)
 return dailyRent.toFixed(2);
 }

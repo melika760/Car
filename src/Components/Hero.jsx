@@ -1,5 +1,6 @@
 import React from 'react'
 import porshce from '../assets/Porsche.png'
+
 const Hero = () => {
   return (
     <section className='flex justify-between m-[6rem] align-center items-center max-md:flex-col'>

@@ -3,13 +3,10 @@ import Lambo2 from "../assets/Lambo2.png"
 import lamboCar from "../assets/Lambo.png"
 const AboutUs = () => {
   return (
-    <section className='m-[80px] flex justify-between '>
+    <section id="About" className='mt-[9rem]  flex justify-between items-center space-x-6'>
         {/* <h2 className='font-bold text-4xl mt-[5rem] mb-[3rem] '>Who We Are?</h2> */}
 <div className=' w-[40%]'>
     <img src={lamboCar} alt='Bentley in City of London' className='w-full object-contain'/>
-</div>
-<div className=' w-[40%]'>
-    <img src={Lambo2} alt='Bentley in City of London' className='w-full object-contain'/>
 </div>
 <div className='w-[30%]'>
 <h2 className='font-bold text-4xl mt-[5rem] mb-[3rem] font-[Poppins] '>Who We Are?</h2> 
@@ -19,7 +16,9 @@ Our mission is simple: give you the chance to drive the world’s best cars, rig
 
 So, why settle for average when you can ride in something extraordinary? Let’s make your trip unforgettable, one epic drive at a time.</p>
 </div>
-
+<div className=' w-[40%]'>
+    <img src={Lambo2} alt='Bentley in City of London' className='w-full object-contain'/>
+</div>
     </section>
   )
 }

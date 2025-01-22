@@ -3,13 +3,14 @@ import Hero from "./Components/Hero";
 import Logos from "./Components/Logos";
 import Nav from "./Components/Nav";
 import PopularCars from "./Components/PopularCars";
-import { Calculation, CarApis } from "./utils/apis";
+import { CarApis } from "./utils/apis";
 
 
 
 function App() {
-  const result=CarApis("Porsche",2024);
+  const {oneItem}=CarApis("Porsche",2024);
   
+  console.log(oneItem)
   return (
 <>
 <Nav/>
