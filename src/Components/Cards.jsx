@@ -3,12 +3,16 @@ import carimg from "../assets/Porsche.png"
 import tire from "../assets/tire.png";
 import gas from "../assets/gas.png";
 import Wheel from "../assets/steering-wheel.png";
-const Cards = () => {
+import { Calculation } from '../utils/apis';
+const Cards = ({Car}) => {
+  const Cardetails=Car[0];
+  console.log(Cardetails.make)
+  const rent= Calculation(Cardetails)
   return (
-    <div className='w-[30%] group border border-gray-100 shadow-sm flex flex-col p-4 space-y-10 bg-gray-100   hover:bg-white hover:shadow-md hover:scale-105 rounded-3xl relative'>
-      <h1 className='text-2xl font-semibold capitalize font-[Poppins]'>Toyota Camery</h1>
+    <div className='w-[300px] h-[300px] group border border-gray-100 shadow-sm flex flex-col p-4 space-y-10 bg-gray-100   hover:bg-white hover:shadow-md hover:scale-105  rounded-3xl relative'>
+      <h1 className='text-2xl font-semibold capitalize font-[Poppins]'>{Cardetails.make} {Cardetails.model}</h1>
       <p className='flex mt-6 text-[32px] font-extrabold font-[Poppins]'>
-    <span className='self-start text-[14px] font-semibold'>$</span>22
+    <span className='self-start text-[14px] font-semibold'>$</span>{rent}
     <span className='self-end text-[14px] font-medium'>/day</span>
 </p>
       <div className=' m-auto items-center'>

@@ -9,10 +9,8 @@ const response= await fetch( `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?
 });
 if(!response.ok){return;}
 const result= await response.json();
-const oneItem=result[0]
-const rent=Calculation(oneItem)
-console.log(rent)
-return {oneItem,rent};
+
+return result;
 }
 
 export function Calculation(car){
