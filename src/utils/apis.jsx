@@ -14,11 +14,13 @@ return result;
 }
 
 export function Calculation(car){
-const baseRent=30;
+const baseRent=90;
+const mileageFactor = 5;
 const CurrentYear=new Date().getFullYear()
 const CarAge=CurrentYear-car.year;
-const AgeDiscount=baseRent*0.01*Math.max(0,CarAge-5);
-const fuelEfficiencyBonus = car.combination_mpg > 25 ? 2 : 0;
-const dailyRent = baseRent - AgeDiscount + fuelEfficiencyBonus;
-return dailyRent.toFixed(2);
+const AgeDiscount=CarAge*0.1;
+console.log(CarAge)
+const fuelEfficiencyBonus = car.combination_mpg> 15 ? 4 : 2;
+const dailyRent = baseRent + AgeDiscount + (mileageFactor/car.combination_mpg)+fuelEfficiencyBonus;
+return Math.ceil(dailyRent).toFixed(2);
 }

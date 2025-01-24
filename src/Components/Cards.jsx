@@ -6,10 +6,10 @@ import Wheel from "../assets/steering-wheel.png";
 import { Calculation } from '../utils/apis';
 const Cards = ({Car}) => {
   const Cardetails=Car[0];
-  console.log(Cardetails.make)
+  console.log(Cardetails.transmission)
   const rent= Calculation(Cardetails)
   return (
-    <div className='w-[300px] h-[300px] group border border-gray-100 shadow-sm flex flex-col p-4 space-y-10 bg-gray-100   hover:bg-white hover:shadow-md hover:scale-105  rounded-3xl relative'>
+    <div className='w-full h-full group border border-gray-100 shadow-sm flex flex-col p-4 space-y-6 bg-gray-100   hover:bg-white hover:shadow-md hover:scale-105  rounded-3xl relative'>
       <h1 className='text-2xl font-semibold capitalize font-[Poppins]'>{Cardetails.make} {Cardetails.model}</h1>
       <p className='flex mt-6 text-[32px] font-extrabold font-[Poppins]'>
     <span className='self-start text-[14px] font-semibold'>$</span>{rent}
@@ -21,15 +21,15 @@ const Cards = ({Car}) => {
       <div className='flex justify-between m-3 group-hover:invisible'>
      <div className='flex flex-col space-y-3 m-2  items-center'>
       <img src={Wheel} alt='Steering Wheel' className='w-[23px]'/>
-      <p className='font-[Poppins] text-gray'>Manual</p>
+      <p className='font-[Poppins] text-gray'>{Cardetails.transmission==="a"?"Automatic":"Manual"}</p>
      </div>
      <div className='flex flex-col space-y-3 m-2  items-center'>
       <img src={tire} alt='Tire' className='w-[23px]'/>
-      <p className='font-[Poppins] text-gray'>FWD</p>
+      <p className='font-[Poppins] text-gray capitalize'>{Cardetails.drive}</p>
      </div>
      <div className='flex flex-col space-y-3 m-2  items-center'>
       <img src={gas} alt='Fuel' className='w-[23px]'/>
-      <p className='font-[Poppins] text-gray'>Gas</p>
+      <p className='font-[Poppins] text-gray capitalize'>{Cardetails.fuel_type}</p>
      </div>
       </div>
       <div className='hidden group-hover:flex absolute bottom-0 left-0 right-0 w-full items-center justify-center z-10'>
