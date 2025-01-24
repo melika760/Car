@@ -9,6 +9,7 @@ import Mercedes from '../assets/CarLogos/benz.png';
 import RollsRoyce from '../assets/CarLogos/RollsRoyce.png';
 import Porsche from '../assets/CarLogos/porsche.png';
 import Tesla from '../assets/CarLogos/tesla.png';
+import BMW from "../assets/CarLogos/BMW.png"
 export const menu=[{
     name:"Cars",
     id:1,
@@ -28,11 +29,6 @@ export const menu=[{
 export const Carlogos=[{
 make:"Bugatti",
 img:bugatti,},
-{
-  make:"Audi",
-  img:audi,
-  
-  },
 {
     make:"Maserati",
     img:maserati, },
@@ -60,5 +56,13 @@ img:bugatti,},
           img:Porsche, },
           {
             make:"Tesla",
-            img:Tesla, }
+            img:Tesla, },
+            {
+              make:"BMW",
+              img:BMW, },
+              {
+                make:"Audi",
+                img:audi,
+                
+                },
 ]
